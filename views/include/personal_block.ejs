@@ -1,0 +1,130 @@
+
+<div class='personal-block'>
+	<div class='id-info'>
+		<div class="upload_avatar id-info-left">
+			<img src="/image/网球大赛.jpg" class='avatar'>
+			<input class="select-avatar-file" name="select-avatar-file" type="file" style="display:none">
+			<button style="display: none;" class="btn btn-inverse upload-file-button">上传头像</button>
+		</div>
+		
+		<div class="id-info-right">
+			<div class='name'>
+				<a href="/user/<%= user._id %>"><span><%= user.username %></span></a>
+				<span class='gender'>&#x2640</span><!--&#x2642-->
+			</div>
+			<div class='msgs'>
+				<i class='my-icon msg-icon'></i>
+				<a href='#' class='all-msg'>我的消息</a>
+				<a href='#' class='msg-num'>[<span><%= (user.notifications||[]).length %></span>]</a>
+				<div class='popover right msg-list'>
+					<div class="arrow"></div>
+
+					<ul class='list'>
+					<% for(var i=0, len=(user.notifications||[]).length; i<len; i++) {
+						var notification = user.notifications[i];
+					%>
+						<li>
+							<a href="#" class='username'><%= notification.from.username %></a>
+							<span class='email'><%= notification.from.email %></span>
+							<a href="#" class='fold-msg'>展开</a>
+							<p class='msg'><%= notification.msg %></p>
+						</li>
+					<% } %>
+					</ul>
+				</div>
+			</div>
+			<div class='logout'>
+				<i class='my-icon logout-icon'></i>
+				<a href="/logout">[登出]</a>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+
+	<div class='divider'>
+		<span class='first'></span>
+		<span class='second'></span>
+		<span class='third'></span>
+	</div>
+
+	<div class='tags'>
+		<div class='info-title'>
+			<span>标签 Tag</span>
+			<i class='my-icon modify-icon' title='点击编辑内容'></i>
+			<i class='my-icon save-icon' title='点击保存内容'></i>
+			<span class='warning'></span>
+		</div>
+
+		<ul class='tag-list'>
+		<% for (var i=0, len=(user.tags||[]).length; i<len; i++) { 
+				var tag = user.tags[i];
+			%>
+			<li>
+				<div class='tag-name-block'>
+					<i class='icon-remove delete-tag' title='点击删除标签'></i>
+					<input class="tag-name" type="text" value="<%= tag.name %>" disabled="disabled">
+				</div>
+				<div class='tag-description'><%= tag.description %></div>
+				<div class='clear'></div>
+			</li>
+		<% } %>
+		</ul>
+
+		<div class='add-tag'>+添加标签</div>
+	</div>
+
+	<div class='divider'>
+		<span class='first'></span>
+		<span class='second'></span>
+		<span class='third'></span>
+	</div>
+
+	<div class='base-info'>
+		<div class='info-title'>
+			<span>基本资料 Information</span>
+			<i class='my-icon modify-icon' title='点击编辑内容'></i>
+			<i class='my-icon save-icon' title='点击保存内容'></i>
+		</div>
+
+		<ul class='info-list'>
+			<li>
+				<span class='key' data-key='school'>院系：</span>
+				<span class='value'><%= user.school||'' %></span>
+			</li>
+			<li>
+				<span class='key' data-key='grade'>年级：</span>
+				<span class='value'><%= user.grade||'' %></span>
+			</li>
+			<li>
+				<span class='key' data-key='email'>Email：</span>
+				<span class='value'><%= user.email||'' %></span>
+			</li>
+			<li>
+				<span class='key' data-key='intro'>自我介绍：</span>
+				<div class='value'><%= user.intro||'' %></div>
+			</li>
+		</ul>
+	</div>
+
+	<div class='divider'>
+		<span class='first'></span>
+		<span class='second'></span>
+		<span class='third'></span>
+	</div>
+	<div class="search-block">
+		<form>
+			<div class="search-type">
+				<select name="search-type">
+					<option>活动</option>
+					<option>用户</option>
+				</select>
+			</div>
+			<div class="search-content">
+				<input name="search-content" type="text" placeholder="名字或标签">
+				<button type="submit" class="btn btn-primary"><i class="icon-search"></i></button>
+			</div>
+			
+			<div class="clear"></div>
+		</form>
+	</div>
+</div>

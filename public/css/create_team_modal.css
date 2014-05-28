@@ -1,0 +1,18 @@
+#create-team-modal .control-label{
+	width: 120px;
+}
+#create-team-modal .controls{
+	margin-left: 140px;
+}
+#create-team-modal input, #create-team-modal textarea{
+	width: 300px;
+}
+#create-team-modal textarea{
+	resize: none;
+	overflow-x: none;
+	overflow-y: auto;
+}
+#create-team-modal .tag{
+	width: 50px;
+	margin-right: 5px;
+}

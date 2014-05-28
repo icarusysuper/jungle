@@ -1,0 +1,115 @@
+.content.all-user-information {
+	padding-bottom: 0px;
+}
+
+.content.all-user-information ul li {
+	list-style-type: none;
+}
+.all-user-information .divider {
+	width: 100%;
+	height: 8px;
+	background-color: #E94A67;
+	margin-bottom: 10px;
+}
+.all-user-information h3 {
+	margin-left: 25px;
+}
+
+.all-user-information span.username, .all-user-information span.e-mail {
+	margin: 15px 35px;
+	font-size: 14pt;
+}
+
+.all-user-information .user-header {
+	margin-right: 25px;
+	border-bottom: solid #989898 1px;
+	margin-bottom: 10px;
+}
+
+.all-user-information .tags {
+	width: 40%;
+	float: left;
+}
+
+.all-user-information .base-info {
+	width: 55%;
+	float: right;
+}
+
+.info-title{
+	font-size: 14pt;
+	color: #E94A67;
+	text-shadow: gray 0px 0px 2px;
+}
+
+.info-title .warning{
+	color: red;
+	font-size: 10pt;
+	text-shadow: none;
+}
+
+.tags .tag-list, .base-info .info-list{
+	margin: 10px 0;
+}
+.tags .tag-list li, .base-info .info-list li{
+	list-style: none;
+	margin-bottom: 10px;
+}
+
+.tags{
+	padding-right: 10px !important;
+}
+
+.tags .tag-list .tag-name-block{
+	position: relative;
+	display: inline-block;
+	min-width: 50px;
+	height: 25px;
+	margin-right: 5px;
+	padding: 0 5px;
+
+	text-align: center;
+	line-height: 25px;
+	vertical-align: middle;
+
+	background-color: #F1F1F1;
+	color: #E7778D;
+
+	border-radius: 15px;
+  	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+}
+
+.tags .tag-name-block .delete-tag{
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	cursor: pointer;
+	display: none;
+	visibility: hidden;
+}
+.tags .tag-name-block:hover .delete-tag{
+	visibility: visible;
+}
+.tags .tag-list li .tag-description{
+	float: right;
+	line-height: 25px;
+	vertical-align: middle;
+	color: #6B6B6B;
+	display: inline-block;
+	width: 140px;
+}
+.tags .add-tag{
+	padding: 5px 10px;
+	background-color: #F1F1F1;
+	color: #6B6B6B;
+	margin-bottom: 10px;
+	display: none;
+}
+
+.base-info .info-list li .key{
+	color: #E7778D;
+}
+.base-info .info-list li .value{
+	color: #6B6B6B;
+}

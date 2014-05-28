@@ -1,0 +1,53 @@
+<div id="create-team-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="create-team-label" aria-hidden="true" keyboard="false">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="create-team-label">创建队伍</h3>
+  </div>
+
+  <div class="modal-body">
+    <form class='form form-horizontal'>
+       <div class="control-group">
+        <label class="control-label" for="name">比赛名</label>
+        <div class="controls">
+          <input type="text" name="name"/>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label" for="url">比赛官网</label>
+        <div class="controls">
+          <input type="text" name="url"/>
+        </div>
+      </div>
+
+      <% include datepicker %>
+
+      <div class="control-group">
+        <label class="control-label" for="category">类别</label>
+        <div class="controls category">
+          <% include filter %>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label" for="tags">标签</label>
+        <div class="controls tags">
+          <input type="text" class='tag'/>
+          <a href="#" class='add-tag' title='点击添加标签'><i class='icon-plus'></i></a>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label" for="details">详细信息</label>
+        <div class="controls">
+          <textarea name="details" rows='3'></textarea>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="modal-footer">
+    <button class='btn btn-primary confirm'>确定</button>
+    <button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button>
+  </div>
+</div>

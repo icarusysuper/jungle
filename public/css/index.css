@@ -1,0 +1,26 @@
+body {
+	font-family: "Microsoft YaHei";
+}
+
+#jungle-timeline {
+	right: 50%;
+	margin-right: -450px !important;
+	position: absolute;
+	z-index: 1;
+}
+
+#jungle-timeline img.media-image {
+	border: none;
+}
+
+#jungle-timeline .media-container .caption {
+	text-align: center;
+}
+
+.slider-container > .slider-item-container > .slider-item > .content {
+	width: 100%;
+}
+
+.vco-timeline .vco-navigation .timenav-background .timenav-tag.timenav-tag-size-full div h3 {
+	color: #989898;
+}

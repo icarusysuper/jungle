@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<% include ../include/file_head %>
+  	<link rel="stylesheet" type="text/css" href="/css/team.css">
+  	<link rel="stylesheet" type="text/css" href="/css/users_information.css">
+  </head>
+  <body>
+
+  	<div class='main'>
+
+	    <% include ../include/general_import %>
+
+		<div class='content all-user-information'>
+			<h3>用户信息</h3>
+			<div class="divider"></div>
+
+			<ul>
+				<li>
+					<div class="user-header"><span class="username"><%= user.username %></span><span class="e-mail"><%= user.email %></span></div>
+					<div class='user-information-block'>
+						<div class="tags">
+							<div class="info-title">
+								<span>标签 tag</span>
+							</div>
+							<ul class="tag-list">
+							<% for (var i=0, len=(user.tags||[]).length; i<len; i++) { 
+									var tag = user.tags[i];
+								%>
+								<li>
+									<span class="tag-name-block"><%= tag.name %></span>
+									<span class="tag-description"><%= tag.description %></span>
+									<div class="clear"></div>
+								</li>
+							<% } %>
+							</ul>
+						</div>
+						<div class="base-info">
+							<div class="info-title">
+								<span>基本资料 Information</span>
+							</div>
+							<ul class="info-list">
+								<li>
+									<span class="key" data-key="school">院系：</span>
+									<span class="value"><%= user.school||'' %></span>
+								</li>
+								<li>
+									<span class="key" data-key="grade">年级：</span>
+									<span class="value"><%= user.grade||'' %></span>
+								</li>
+								<li>
+									<span class="key" data-key="e-mail">Email：</span>
+									<span class="value"><%= user.email||'' %></span>
+								</li>
+								<li>
+									<span class="key" data-key="self-intro">自我介绍：</span>
+									<span class="value"><%= user.intro||'' %></span>
+								</li>
+							</ul>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</li>
+			</ul>
+
+
+		</div>
+		<div class="clear"></div>
+	</div>
+	<% include ../include/page_foot %>
+  </body>
+  <% include ../include/file_foot %>
+  <script type="text/javascript" src='/js/team.js'></script>
+</html>

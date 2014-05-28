@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<% include ../include/file_head %>
+  	<link rel="stylesheet" type="text/css" href="/css/team.css">
+  	<link rel="stylesheet" type="text/css" href="/css/create_team_modal.css">
+  </head>
+  <body>
+
+  	<div class='main'>
+
+	    <% include ../include/general_import %>
+	    <% include ../include/create_team_modal %>
+
+		<div class='content team'>
+
+			<div class='team-ops'>
+				<div><i class='my-icon create-icon'></i><a href="#" class='create-team'>[创建队伍]</a></div>
+				<div><a href="#" class='manage-team'>[管理我的队伍]</a></div>
+				<% include ../include/filter %>
+			</div>
+
+			<% for(var i=0, len=teams.length; i<len; i++) {
+				var team = teams[i];
+			%>
+
+			<div class='divider'>
+				<span class='first'></span>
+				<span class='second'></span>
+				<span class='third'></span>
+				<span class='second'></span>
+				<span class='first'></span>
+			</div>
+
+			<div class='team-block'>
+				<div class='team-info'>
+					<div class='contest-creator'>
+						<a href='#' class='contest-title'><%= team.contest.name %></a>
+						<span class='creator' data-id='<%= team.creator.id %>'>创建者：<a href="/user/<%= team.creator.id %>"><%= team.creator.username %></a></span>
+					</div>
+					<div class='tag-date'>
+						<div class='tags'>标签：
+						<% if(team.tags) { %>
+							<% for (var j=0, l=team.tags.length; j<l; j++) { %>
+								<span class='tag'><%= team.tags[j] %></span>
+							<% } %>
+						<% } %>
+						</div>
+						<div class='date'>
+							<span>创建日期：<%= new Date(team.createAt).toLocaleDateString() %></span>
+							<span>截止日期：<%= new Date(team.deadLine).toLocaleDateString() %></span>
+						</div>
+					</div>
+				</div>
+				<div class='team-intro'>
+					<h4>详细信息：</h4>
+					<p><%= team.details %></p>
+				</div>
+
+				<div class='status'>
+					<span class='label label-info'>组队中</span>
+					<button class='btn btn-mini'>关闭</button>
+					<button class='btn btn-danger btn-mini'>删除</button>
+				</div>
+				<a href='#' class='join'><i class='my-icon join-icon'></i>申请加入</a>
+				<div class='msg-writing'>
+					<input type='text' class='msg span6' placeholder='请填写申请信息'/>
+					<button class='btn'>发送</button>
+				</div>
+			</div>
+
+			<% } %>
+
+		</div>
+		<div class="clear"></div>
+	</div>
+
+	<% include ../include/page_foot %>
+  </body>
+  <% include ../include/file_foot %>
+  <script type="text/javascript" src='/js/team.js'></script>
+  <script type="text/javascript" src='/js/create_team_modal.js'></script>
+</html>

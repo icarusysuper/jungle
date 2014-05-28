@@ -1,0 +1,139 @@
+.team{
+	padding-top: 10px;
+}
+
+.team .team-ops div {
+	display: inline-block;
+}
+
+.team .team-ops{
+	margin-top: 10px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.team .team-ops span{
+	margin-right: 20px;
+}
+.team .team-ops a{
+	color: #A69E24;
+}
+.team .team-ops .create-icon{
+	background-image: url(/image/anchor-yellow.png);
+	margin-right: 5px;
+}
+
+.team .divider{
+	width: 100%;
+	height: 8px;
+}
+.team .divider>span{
+	float: left;
+	height: 100%;
+}
+.team .divider .first{
+	width: 21%;
+	background-color: #8C8300;
+}
+.team .divider .second{
+	width: 19%;
+	background-color: #D1C825; 
+}
+.team .divider .third{
+	width: 20%;
+	background-color: #F5EE85;
+}
+
+.team-block{
+	width: 90%;
+	padding: 15px 25px;
+}
+.team-block .contest-creator{
+	width: 30%;
+	display: inline-block;
+	border-right: 2px solid #CFDB7C;
+	padding-right: 20px;
+	margin-right: 10px;
+}
+.team-block .contest-creator .contest-title{
+	display: block;
+	color: #A69E24;
+	font-size: 11pt;
+	margin-bottom: 5px;
+}
+.team-block .contest-creator .creator{
+	color: #6B6B6B;
+}
+.team-block .contest-creator .creator img{
+	width: 25px;
+	height: 25px;
+	margin-right: 10px;
+}
+.team-block .contest-creator .creator a{
+	color: #6B6B6B;
+}
+.team-block .contest-creator .creator a:hover{
+	color: #A69E24;
+}
+
+.team-block .tag-date{
+	display: inline-block;
+	width: 63%;
+	vertical-align: top;
+	color: #6B6B6B;
+	font-size: 11pt;
+}
+.team-block .tag-date .tags{
+	margin-bottom: 10px;
+}
+.team-block .tag-date .tags .tag{
+	display: inline-block;
+	padding: 5px 10px;
+	background-color: #C7B700;
+	color: white;
+	margin-right: 15px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+.team-block .tag-date .date span{
+	font-size: 8pt;
+	margin-right: 10px;
+}
+.team-block .team-intro{
+	margin-top: 10px;
+}
+.team-block .team-intro h4{
+	font-size: 12pt;
+	font-weight: normal;
+	color: #A69E24;
+	margin: 0;
+}
+.team-block .team-intro p{
+	margin: 5px 0 5px 10px;
+	color: #6B6B6B;
+	line-height: 1.5em;
+}
+
+.team-block .status{
+	text-align: right;
+}
+
+.team-block .join{
+	color: #A69E24;
+	font-size: 12pt;
+}
+.team-block .join .join-icon{
+	background-image: url(/image/plus-yellow.png);
+}
+
+.team-block .msg-writing{
+	margin-top: 5px;
+	display: none;
+}
+.team-block .msg-writing input{
+	margin-bottom: 0;
+}
+
+.control-group .control textarea {
+	overflow: auto;
+}

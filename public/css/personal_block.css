@@ -1,0 +1,297 @@
+/**********personal_block**************/
+
+.personal-block {
+	min-height: 580px;
+	font-family: "微软雅黑";
+	float: left;
+	width: 30%;
+	margin-right: 25px;
+	background-color: white;
+
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+.personal-block>div:not(.divider){
+	padding: 15px;
+}
+
+.personal-block .divider{
+	width: 100%;
+	height: 8px;
+}
+.personal-block .divider>span{
+	float: left;
+	height: 100%;
+}
+.personal-block .divider .first{
+	width: 22%;
+	background-color: #E83455;
+}
+.personal-block .divider .second{
+	width: 22%;
+	background-color: #FE7D95; 
+}
+.personal-block .divider .third{
+	width: 56%;
+	background-color: #FFCED7;
+}
+
+.personal-block .msg-icon{
+	background-image: url(/image/message.png);
+}
+.personal-block .logout-icon{
+	background-image: url(/image/logout.png);
+}
+.personal-block .modify-icon{
+	background-image: url(/image/pen.png);
+	cursor: pointer;
+}
+.personal-block .save-icon{
+	background-image: url(/image/tick.png);
+	cursor: pointer;
+	display: none;
+}
+
+.personal-block .id-info>div{
+	color: #989898;
+	font-size: 11pt;
+	margin-bottom: 8px;
+}
+.personal-block .id-info .name{
+	color: #787878;
+	font-size: 14pt;
+}
+.personal-block .id-info .name .gender{
+	color: #E7778D;
+	font-size: 16pt;
+}
+/*.personal-block .id-info .id{
+	margin-bottom: 10px;
+}*/
+.personal-block .id-info .msgs a{
+	color: #EB3355;
+}
+
+.personal-block .id-info .msgs .all-msg, .personal-block .id-info .logout a{
+	color: #989898;
+}
+.personal-block .id-info .msgs .all-msg:hover,.personal-block .id-info .logout a:hover{
+	color: #EB3355;
+}
+
+.personal-block .id-info .msgs{
+	position: relative;
+}
+
+.personal-block .id-info .msgs .msg-list{
+	width: 270px;
+	min-height: 100px;
+	max-height: 450px;
+	padding: 15px;
+	background-color: #F5F2F2;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+
+	position: absolute;
+	right: -160px;
+	top: -30px;
+	left: auto;
+
+	border: 1px solid #eee;
+	box-shadow: 5px 5px 5px #999;
+	-webkit-box-shadow: 5px 5px 5px #999;
+	-moz-box-shadow: 5px 5px 5px #999;
+
+	z-index: 100;
+
+	display: none;
+	opacity: 0;
+}
+.personal-block .id-info .msgs .msg-list .arrow{
+	top: 40px;
+	border-right-color: #eee;
+}
+.personal-block .id-info .msgs .msg-list .arrow:after{
+	border-right-color: #F5F2F2;
+}
+.personal-block .id-info .msgs .msg-list .list{
+	margin: 0;
+}
+.personal-block .id-info .msgs .msg-list .list li{
+	list-style: none;
+	border-bottom: 1px solid gray;
+}
+.personal-block .id-info .msgs .msg-list .list li .username{
+	font-size: 15pt;
+}
+.personal-block .id-info .msgs .msg-list .list li .email{
+	font-size: 12pt;
+	font-weight: bold;
+}
+.personal-block .id-info .msgs .msg-list .list li .fold-msg{
+	float: right;
+}
+.personal-block .id-info .msgs .msg-list .list li .msg{
+	margin-top: 5px;
+	text-indent: 2em;
+	height: 1.2em;
+	text-overflow:ellipsis;
+	overflow:hidden; 
+	white-space:nowrap; 
+}
+
+.personal-block .upload_avatar > img {
+	width: 85px;
+	height: 85px;
+}
+
+.personal-block .upload_avatar .upload-file-button {
+	width: 85px;
+}
+
+.personal-block .upload_avatar{
+	cursor: pointer;
+	display: inline-block;	
+	float: left;
+	margin-right: 20px;
+	margin-top: 10px;
+
+	width: 85px;
+	height: 85px;
+
+	border: 2px solid white;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 16px rgba(200, 200, 200, 0.6);
+	-webkit-box-shadow: 2px #eee;
+	-moz-box-shadow: 2px #eee;
+}
+
+.personal-block .id-info-right {
+	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+.personal-block .id-info-right div {
+	margin-bottom: 10px;
+}
+
+.personal-block .info-title{
+	font-size: 14pt;
+	color: #E94A67;
+	text-shadow: gray 0px 0px 2px;
+}
+
+.personal-block .info-title .warning{
+	color: red;
+	font-size: 10pt;
+	text-shadow: none;
+}
+
+.personal-block .tags .tag-list, .personal-block .base-info .info-list{
+	margin: 10px 0;
+}
+.personal-block .tags .tag-list li, .personal-block .base-info .info-list li{
+	list-style: none;
+	margin-bottom: 10px;
+}
+
+.personal-block .tags{
+	padding-right: 10px !important;
+}
+.personal-block .tags .tag-list li .tag-name-block{
+	position: relative;
+	display: inline-block;
+	min-width: 50px;
+	height: 25px;
+	margin-right: 5px;
+	padding: 0 5px;
+
+	text-align: center;
+	line-height: 25px;
+	vertical-align: middle;
+
+	background-color: #F1F1F1;
+	color: #E7778D;
+
+	border-radius: 15px;
+  	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+}
+
+.personal-block .tags .tag-name-block span {
+	max-width: 80px;
+	overflow: auto;
+}
+
+.personal-block .tags .tag-name-block .tag-name {
+	cursor: text;
+	box-shadow: none;
+	background-color: #F1F1F1;
+	max-width: 75px;
+	padding: 0px;
+	font-size: 14px;
+	border: none;
+	margin: auto;
+	font-family: "微软雅黑";
+	line-height: 0px;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.personal-block .tags .tag-name-block .delete-tag{
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	cursor: pointer;
+	display: none;
+	visibility: hidden;
+}
+.personal-block .tags .tag-name-block:hover .delete-tag{
+	visibility: visible;
+}
+.personal-block .tags .tag-list li .tag-description{
+	float: right;
+	line-height: 25px;
+	vertical-align: middle;
+	color: #6B6B6B;
+	display: inline-block;
+	width: 140px;
+}
+.personal-block .tags .add-tag{
+	cursor: pointer;
+	width: 70px;
+	padding: 5px 10px;
+	background-color: #F1F1F1;
+	color: #6B6B6B;
+	margin-bottom: 10px;
+	display: none;
+}
+
+.personal-block .base-info .info-list li .key{
+	color: #E7778D;
+}
+.personal-block .base-info .info-list li .value{
+	color: #6B6B6B;
+}
+
+.personal-block .search-block .search-content {
+	float: right;
+}
+.personal-block .search-block .search-content > input {
+	width: 100px;
+	overflow: auto;
+}
+
+.personal-block .search-block .search-content button {
+	vertical-align: top;
+}
+
+.personal-block .search-block .search-type {
+	float: left;
+}
+.personal-block .search-block .search-type > select {
+	width: 70px;
+}
+/**************************************/

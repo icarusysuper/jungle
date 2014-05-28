@@ -1,0 +1,44 @@
+body {
+	padding: 40px 0px 40px 0px;
+	background-color: #eee;
+}
+
+.form-signin {
+	width: 330px;
+	margin: auto;
+	margin-top: 150px;
+}
+
+.form-control.e-mail, .form-control.password, .form-control.re-password, .form-control.user-name {
+	width: 316px;
+	height: 35px;
+}
+
+a.regist {
+	font-size: 14pt;
+	cursor: pointer;
+	margin-left: 100px;
+	color: black;
+}
+
+a.regist:hover {
+	color: #08c;
+	text-decoration: none;
+}
+
+.regist-icon {
+	vertical-align: -10%;
+}
+
+.btn.btn-primary.login-btn, .btn.btn-primary.regist-btn {
+	width: 100%;
+	height: 35px;
+}
+
+.forget-password {
+	float: right;
+}
+
+.help-inline {
+	margin-bottom: 5px;
+}

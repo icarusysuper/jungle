@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<title>login in - jungle</title>
+		<link rel="stylesheet" type="text/css" href="/lib/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="/css/login.css" />
+		<script type="text/javascript" src="js/"></script>
+	</head>
+	<body screen_capture_injected="true" youdao="bind">
+		<% include ../include/underConstruction %>
+		<div class="container">
+			<form class="form-signin" role="form" method="post" action="/login">
+				<h2 class="form-signin-heading">登录jungle
+					<a class="regist" href="/register">注册<i class="regist-icon icon-circle-arrow-right"></i></a>		
+				</h2>
+
+				<input name="email" type="text" class="form-control e-mail" placeholder="邮箱">
+
+				<input name="password" type="password" class="form-control password" placeholder="密码">
+
+				<label class="checkbox">
+					<input type="checkbox" value="remember-me">记住我
+					<a class="forget-password" href="#">忘记密码？</a>
+				</label>
+
+				<span class="help-inline"></span>
+				<button class="btn btn-primary login-btn" type="submit">登录</button>
+			</form>
+		</div>
+
+	</body>
+	<script type="text/javascript" src="/lib/jquery-1.9.0.min.js"></script>
+	<script type="text/javascript" src="/js/login.js"></script>
+</html>

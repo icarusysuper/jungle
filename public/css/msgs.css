@@ -1,0 +1,37 @@
+.header-nav{
+	display: none;
+}
+
+.all-msgs{
+	padding-top: 10px;
+}
+
+.all-msgs h3{
+	font-weight: normal;
+	padding-left: 10px;
+	color: #6DA2A8;
+	text-shadow: gray 0px 0px 1px;
+	border-bottom: 1px solid gray;
+}
+
+.all-msgs .msg-block{
+	padding: 0 10px;
+	width: 90%;
+	margin: auto;
+	margin-top: 10px;
+	border-bottom: 1px solid #EEEEEE;
+}
+
+.all-msgs .msg-block .username{
+	font-size: 14pt;
+	color: #6DA2A8;
+}
+
+.all-msgs .msg-block .email{
+	font-size: 14pt;
+	font-weight: bold;
+}
+
+.all-msgs .msg-block .msg{
+	text-indent: 2em;
+}
