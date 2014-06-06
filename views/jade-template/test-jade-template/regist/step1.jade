@@ -1,0 +1,19 @@
+div.form-box
+	div.control-group
+		label.control-label 用户名
+		div.input-prepend
+			span(class="add-on"): i(class="icon-user")
+			input(name="username" type="text" placeholder="请输入手机号或者邮箱")
+
+	div.control-group
+		label.control-label 验证码
+		input(name="captcha" type="text")
+		img(src="#" alt="x")
+
+	div.control-group
+		label(class="checkbox inline")
+			input(name="agree" type="checkbox") 
+			span(class="font-sp1") 我同意 
+			span(class="font-sp2") 来此购服务协议
+
+	a(href="./step2" class="btn btn-primary") 下一步
