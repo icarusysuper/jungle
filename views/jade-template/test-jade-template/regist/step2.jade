@@ -1,0 +1,42 @@
+div.form-box
+	div.step-info 
+		i(class="icon-user")
+		span 为了给您提供更好的购车与贷款服务，您需要填写真实的身份信息，享受会员保障服务。身份信息已经录入不可更改，隐私信息未经本人许可严格保密。
+
+	div.step-cur-user 当前用户名xxxxxxx@qq.com
+
+	div.block
+		div.control-group
+			div(class="control-label label-item") 设置登录密码
+				span.font-sp 登录时需验证，保护账号信息
+
+		div.control-group
+			label.control-label 输入密码
+			div.input-prepend
+				span.add-on: i(class="icon-user")
+				input(name="password" type="password")
+
+		div.control-group
+			label.control-label 再输入一次
+			div.input-prepend
+				span.add-on: i(class="icon-user")
+				input(name="re-password" type="password")
+
+	div.block
+		div.control-group
+			div(class="control-label label-item") 设置身份信息
+				span.font-sp 请务必准确填写本人的身份信息，注册后不能更改。隐私信息未经本人许可严格保密，若您的身份信息和贷款手续身份信息不一致，将会自动关闭服务。
+
+		div.control-group
+			label.control-label 真实姓名
+			div.input-prepend
+				span.add-on: i(class="icon-user")
+				input(name="trueUsername" type="text")
+
+		div.control-group
+			label.control-label 身份证号码
+			div.input-prepend
+				span.add-on: i(class="icon-user")
+				input(name="idCard" type="text")
+
+	a(href="./step3" class="btn btn-primary") 下一步

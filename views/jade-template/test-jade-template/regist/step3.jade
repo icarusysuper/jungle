@@ -1,0 +1,32 @@
+div.form-box
+	div.step-info 
+		i(class="icon-user")
+		span 为了给您提供更好的购车与贷款服务，您需要绑定信用卡（包含实名认证）。成功绑定后就能立即开始贷款购车，同时享受会员保障服务。
+
+	div.block
+		div.control-group
+			div(class="control-label label-item") 绑定行用卡
+				span.font-sp 填写银行卡号，并用此卡进行贷款业务
+
+		div.control-group
+			label.control-label 真实姓名
+			div.input-prepend
+				span.add-on: i(class="icon-user")
+				input(name="reTrueUsername" type="text")
+
+		div.control-group
+			label.control-label 银行卡卡号
+			div.input-prepend
+				span.add-on: i(class="icon-user")
+				input(name="bankIdCard" type="text")
+			p 输入卡号将智能识别卡种，
+				a(href="#") 银行卡要求
+
+		div.control-group
+			label.control-label 手机号码
+			div.input-prepend
+				span.add-on: i(class="icon-user")
+				input(name="telphone" type="text")
+			p 请填写您在银行卡预留的手机号码，以验证银行卡是否属于您本人
+				
+	a(href="./step4" class="btn btn-primary") 下一步
