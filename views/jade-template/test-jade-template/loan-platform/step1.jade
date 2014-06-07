@@ -1,0 +1,79 @@
+div(class="form-box form-horizontal")
+	div.step-info 
+		i(class="icon-user")
+		span 尊敬的用户，您好！以下各项均必填，如填写遇到困难，请
+		a(href="#") 联系我们
+
+	div.block
+		div.control-group
+			label.control-label 姓名
+			div.controls
+				input(name="username" type="text" value="XXX" readonly)
+
+		div.control-group
+			label.control-label 性别
+			div.controls
+				label(class="checkbox inline")
+					input(name="male" type="checkbox" checked) 
+					span 男
+				label(class="checkbox inline")
+					input(name="female" type="checkbox") 
+					span 女
+
+		div.control-group
+			label.control-label 生日
+			div.controls
+				input(type="text" class="birthday-datepicker")
+
+		div.control-group
+			label.control-label 民族
+			div.controls
+				label(class="checkbox inline")
+					input(name="han" type="checkbox" checked) 
+					span 汉
+				label(class="checkbox inline")
+					input(name="other" type="checkbox") 
+					span 其他民族
+					button(type="button") ...
+
+		div.control-group
+			label.control-label 手机
+			div.controls
+				input(name="telPhone" type="text")
+
+		div.control-group
+			label.control-label 邮箱
+			div.controls
+				input(name="e-mail" type="text")
+
+	div.block
+		div.control-group
+			label.control-label 婚姻状况
+			div.controls
+				select
+					option 是
+					option 否
+
+		div.control-group
+			label.control-label 收入区间（人民币）
+			div.controls
+				select
+					option 5000以下
+					option 5000~10000
+					option 10000~20000
+					option 20000以上
+
+	div.block
+		div.control-group
+			label.control-label 户口所在地
+			div.controls
+				input(name="local" type="text")
+
+		div.control-group
+			label.control-label 常住地址
+			div.controls
+				input(name="address" type="text")
+
+	a(href="./step2" class="btn btn-primary") 提交
+
+	script(type="text/javascript" src="/javascripts/loan-platform/loan-platform.js")

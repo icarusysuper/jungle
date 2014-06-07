@@ -1,0 +1,61 @@
+div(class="form-box")
+	div.step-info 
+		i(class="icon-user")
+		span 请认真按要求填写下方代办业务。如有疑问，欢迎
+		a(href="#") 联系我们
+
+	div.block
+		div.control-group
+			label.control-label 信用卡
+				span.font-sp 请选择您要绑定的信用卡，可以多选
+			div.controls
+				select
+					option （建行）45646146541313
+					option （中行）66464614941616
+
+		div.control-group
+			label.control-label 汽车型号
+				span.font-sp 请从
+					a(href="#") 我的车辆收藏
+				span.font-sp 里选择想要购买的汽车
+			div.controls
+				select(name="jiangxiaoshang")
+					option 奥迪
+					option 奔驰
+					optoin ...
+			div.controls
+				select(name="chexing")
+					option 奥迪A8
+					option 宝马5系
+					option ...
+
+		div.control-group
+			label.control-label 理财产品
+				span.font-sp 请选择是否购买
+					a(href="#") 配套的理财产品
+			div.controls
+				select
+					option 是
+					option 否
+
+		div.control-group
+			label.control-label 贷款保险产品
+				span.font-sp 请选择是否购买
+					a(href="#") 相应额度的贷款保险产品
+			div.controls
+				select
+					option 是
+					option 否
+
+		div.control-group
+			label.control-label 第三方担保人
+				span.font-sp 请选择是否将经销商作为
+					a(href="#") 第三方担保人
+			div.controls
+				select
+					option 是
+					option 否
+		
+	a(href="./step4" class="btn btn-primary") 提交
+
+	script(type="text/javascript" src="/javascripts/loan-platform/loan-platform.js")

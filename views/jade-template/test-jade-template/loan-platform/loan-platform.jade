@@ -1,0 +1,42 @@
+extends ../layout
+
+block content
+	include ../includes/header
+	include ../includes/navigation
+
+	script(src="/lib/jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.min.js")
+	link(rel="stylesheet", href="/lib/jquery-ui-1.10.4.custom/css/ui-lightness/jquery-ui-1.10.4.custom.min.css")
+	link(rel="stylesheet", href="/stylesheets/common/form.css")
+	link(rel="stylesheet", href="/stylesheets/loan-platform/loan-platform.css")
+	div.container
+		div(class="progress-bar #{curStep}")
+			div(class='circle first') 1
+			div(class='line second')
+			div(class='circle second') 2 
+			div(class='line third')
+			div(class='circle third') 3
+			div(class='line forth')
+			div(class='circle forth') √
+
+			div(class="bar-info")
+				span(class="first-info") 个人基本信息
+				span(class="second-info") 材料提交
+				span(class="third-info") 相关服务
+				span(class="forth-info") 完成
+
+		form
+			case curStep
+				when 'first'
+					include step1
+				when 'second'
+					include step2
+				when 'third'
+					include step3
+				when 'forth'
+					include step4
+				default
+					include ../error
+
+	
+
+
